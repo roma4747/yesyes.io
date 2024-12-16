@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/sass/main.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <!--Header-->
+      <header>
+        <section class="header-portfolio">
+          <nav class="header-portfolio-nav">
+            <div class="header-portfolio-container">
+              <!-- Логотип -->
+              <div>
+                <a href="studio.html">
+                  <img src="img/Logo.png" alt="logo" class="portfolio-logo" />
+                </a>
+              </div>
+
+              <!--Навігація Studio-Portfolio-Contacts -->
+              <ul>
+                <div class="portfolio-navigation">
+                  <li>
+                    <a href="studio.html"
+                      ><img src="img/studio-no-line.png" class="portfolio-navigation-studio"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="portfolio.html"
+                      ><img
+                        src="img/portfolio-with-line.png"
+                        alt="portfolio"
+                        class="portfolio-navigation-portfolio"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#contact"
+                      ><img
+                        src="img/Menu Nav.png"
+                        alt="contact"
+                        class="portfolio-navigation-contacts"
+                    /></a>
+                  </li>
+                </div>
+              </ul>
+
+              <!--Пошта та Номер -->
+              <div>
+                <div class="portfolio-information">
+                  <span class="portfolio-tablet-email">info@devstudio.com</span>
+                  <a href="mailto:info@webstudio.com"
+                    ><img
+                      src="img/info@devstudio.com.png"
+                      alt="info@"
+                      class="portfolio-information-email"
+                  /></a>
+                  <a><span class="portfolio-information-number">+11 (000) 111-111-11</span></a
+                  >
+                </div>
+              </div>
+
+              <!-- Гамбургер -->
+              <div class="portfolio-hamburger-container" id="portfolio-hamburger-container">
+                <svg
+                  width="32"
+                  height="22"
+                  viewBox="0 0 32 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_297053_2156)">
+                    <path
+                      d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                      stroke="#2E2F42"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_297053_2156">
+                      <rect width="32" height="22" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+
+              <!-- Кнопка закриття -->
+              <button class="portfolio-close-btn" id="portfolio-close-btn">&times;</button>
+
+              <!-- Меню -->
+              <div class="portfolio-menu-wrapper" id="portfolio-menu-wrapper">
+                <ul class="portfolio-hamburger-list">
+                  <div>
+                    <li class="portfolio-hamburger-list-studio"><a href="studio.html">Studio</a></li>
+                    <li class="portfolio-hamburger-list-portfolio"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="portfolio-hamburger-list-contacts"><a href="#contacts">Contacts</a></li>
+                  </div>
+                </ul>
+                <div class="portfolio-menu-info">
+                  <snap class="portfolio-menu-info-number">+11 (000) 111-11-11</snap>
+                  <snap class="portfolio-menu-info-email">info@devstudio.com</snap>
+                </div>
+                  <div class="portfolio-social-icons">
+                    <!-- Иконки соцсетей -->
+                    <a href="#instagram"><img src="img/instagram.png" alt="instagram" class=""/></a>
+                    </a>
+                    <a href="#twitter"><img src="img/twiter.png" alt="twitter" class=""/></a>
+                    </a>
+                    <a href="#facebook"><img src="img/facebook.png" alt="facebook" class=""/></a>
+                    </a>
+                    <a href="#linkedin"><img src="img/linked.png" alt="linkedin" class=""/></a>
+                    </a>
+              </div>
+              </div>
+
+
+              <script>
+                // Элементи
+                const hamburger = document.getElementById("portfolio-hamburger-container");
+                const menu = document.getElementById("portfolio-menu-wrapper");
+                const closeBtn = document.getElementById("portfolio-close-btn");
+
+                // Відкрити меню
+                hamburger.addEventListener("click", () => {
+                  menu.classList.add("open");
+                  hamburger.classList.add("hidden"); // Скрити гамбургер
+                  closeBtn.classList.add("visible"); // Показати крестик
+                });
+
+                // Закрити меню
+                closeBtn.addEventListener("click", () => {
+                  menu.classList.remove("open");
+                  hamburger.classList.remove("hidden"); // Показати гамбургер
+                  closeBtn.classList.remove("visible"); // Скрити крестик
+                });
+              </script>
+            </div>
+          </nav>
+        </section>
+      </header>
+    </div>
+    <!--Main-->
+    <main>
+      <section class="main-section">
+        <div class="container"></div>
+      </section>
+
+      <section class="main-section">
+        <div class="container"></div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <section class="footer-section">
+        <div class="container"></div>
+      </section>
+    </footer>
+  </body>
+</html>
